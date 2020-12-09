@@ -1,6 +1,6 @@
 <template>
 <div class="topnav">
-    <div class="logo" @click="toggleAside">logo</div>
+    <div class="logo" @click="toggleAside">LOGO</div>
     <div class="menu">
         <span style="margin-right:20px;">菜单1</span>
         <span>菜单2</span>
@@ -30,8 +30,7 @@ export default {
 
 <style lang="scss">
 .topnav {
-    border: 1px solid red;
-    background: #efefef;
+    background: #00aa7f;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -40,6 +39,16 @@ export default {
     .logo,
     .menu {
         margin: 20px 40px 20px 40px;
+		
     }
+	.logo{
+		font-size: 20px;
+		font-weight: bold;
+		color:#eee;
+	}
+	.menu{
+		font-size: 16px;
+		color:#eee;
+	}
 }
 </style>

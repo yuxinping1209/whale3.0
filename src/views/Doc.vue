@@ -76,7 +76,7 @@ export default {
 }
 
 aside {
-    background: lightblue;
+    background: #efefef;
     width: 150px;
     padding: 16px 0;
     position: fixed;
@@ -85,9 +85,13 @@ aside {
     padding-top: 70px;
     height: 100%;
 
-    >h2 {
-        margin-bottom: 4px;
-        padding: 0 16px;
+    >ol>h2 {
+        margin-bottom: 10px;
+        // padding: 0 16px;
     }
+	>ol>li{
+		list-style: none;
+		margin-bottom: 10px;
+	}
 }
 </style>
