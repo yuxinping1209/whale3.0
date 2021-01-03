@@ -13,7 +13,7 @@
                 <li>其他</li>
             </ol>
         </aside>
-        <main>主内容</main>
+        <main>测试内容</main>
     </div>
 </div>
 </template>
