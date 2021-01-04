@@ -6,14 +6,19 @@
         <aside v-if="asideVisible">
             <ol>
                 <h2>组件列表</h2>
-                <li>switch</li>
-                <li>button</li>
-                <li>dialog</li>
-                <li>tab</li>
-                <li>其他</li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <li><router-link to="/doc/switch">switch</router-link></li>
+                <!-- <router-link>button</router-link>
+                <router-link>dialog</router-link>
+                <router-link>tab</router-link>
+                <router-link>其他</router-link> -->
             </ol>
         </aside>
-        <main>测试内容</main>
+        <main><router-view/></main>
     </div>
 </div>
 </template>
