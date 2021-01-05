@@ -17,6 +17,9 @@
 	<div>
 		<Button disabled>禁用按钮</Button>
 	</div>
+	<div>
+		<Button :loading="true">加载中</Button>
+	</div>
 
 </template>
 
