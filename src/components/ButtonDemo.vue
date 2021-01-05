@@ -1,8 +1,17 @@
 <template>
-	<Button @click="onClick" @focus="onClick" @mouseover="onClick">按钮</Button>
-	<Button theme="text" @click="onClick" @focus="onClick" @mouseover="onClick">按钮</Button>
-	<Button theme="link" @click="onClick" @focus="onClick" @mouseover="onClick">按钮</Button>
-	<Button theme="button" @click="onClick" @focus="onClick" @mouseover="onClick">按钮</Button>
+	
+	<dir>
+		<Button>按钮</Button>
+		<Button theme="button">按钮</Button>
+		<Button theme="text">按钮</Button>
+		<Button theme="link">按钮</Button>
+	</dir>
+	<dir>
+		<Button size="normal">按钮</Button>
+		<Button size="big">按钮</Button>
+		<Button size="small">按钮</Button>
+	</dir>
+
 </template>
 
 <script lang="ts">
@@ -15,7 +24,9 @@
 			const onClick = () => {
 				console.log('hi')
 			}
-			return{onClick}
+			return {
+				onClick
+			}
 		}
 	}
 </script>
