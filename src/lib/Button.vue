@@ -1,5 +1,5 @@
 <template>
-	<button class="gulu-button" :class="classes">
+	<button class="gulu-button" :class="classes" :disabled="disabled">
 		<slot />
 	</button>
 </template>
@@ -20,6 +20,10 @@
 			level: {
 				type: String,
 				default: 'main'
+			},
+			disabled: {
+				type: Boolean,
+				default: false
 			}
 		},
 		setup(props, context) {
@@ -125,6 +129,14 @@
 			&:hover,
 			&:focus {
 				color: lighten(white, 10%);
+			}
+		}
+		&[disabled]{
+			cursor: not-allowed;
+			&:hover,
+			&:focus {
+				color: grey;
+				border-color: grey;
 			}
 		}
 	}

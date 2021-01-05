@@ -14,6 +14,9 @@
 		<Button level="main">主要按钮</Button>
 		<Button level="danger">危险按钮</Button>
 	</div>
+	<div>
+		<Button disabled>禁用按钮</Button>
+	</div>
 
 </template>
 
