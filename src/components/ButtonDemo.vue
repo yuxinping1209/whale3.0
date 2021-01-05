@@ -1,16 +1,19 @@
 <template>
-	
-	<dir>
+	<div>
 		<Button>按钮</Button>
 		<Button theme="button">按钮</Button>
 		<Button theme="text">按钮</Button>
 		<Button theme="link">按钮</Button>
-	</dir>
-	<dir>
+	</div>
+	<div>
 		<Button size="normal">按钮</Button>
 		<Button size="big">按钮</Button>
 		<Button size="small">按钮</Button>
-	</dir>
+	</div>
+	<div>
+		<Button level="main">主要按钮</Button>
+		<Button level="danger">危险按钮</Button>
+	</div>
 
 </template>
 

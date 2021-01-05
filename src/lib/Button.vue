@@ -16,17 +16,23 @@
 			size: {
 				type: String,
 				default: 'normal'
+			},
+			level: {
+				type: String,
+				default: 'main'
 			}
 		},
 		setup(props, context) {
 			const {
 				theme,
-				size
+				size,
+				level
 			} = props
 			const classes = computed(() => {
 				return {
 					[`gulu-theme-${theme}`]: theme,
 					[`gulu-size-${size}`]: size,
+					[`gulu-level-${level}`]: level,
 				};
 			})
 			return {
@@ -110,6 +116,15 @@
 				font-size: 12px;
 				height: 20px;
 				padding: 0 4px;
+			}
+		}
+
+		&.gulu-level-danger {
+			background-color: red;
+
+			&:hover,
+			&:focus {
+				color: lighten(white, 10%);
 			}
 		}
 	}
